@@ -1,5 +1,26 @@
 # == Class: irqbalance
 #
+# Manages the irqbalance package
+#
+# === Parameters
+#
+# [*ensure*]
+#   String.
+#
+#   Possible values are `present`, `absent`, `latest`.
+#
+#   defaults to: `present`
+#
+# === Examples
+#
+# include irqbalance
+# 
+# class { 'irqbalance': }
+# 
+# class { 'irqbalance': ensure => present }
+# class { 'irqbalance': ensure => latest }
+# class { 'irqbalance': ensure => absent }
+# 
 # === Authors
 #
 # Joshua Hoblitt <jhoblitt@cpan.org>
