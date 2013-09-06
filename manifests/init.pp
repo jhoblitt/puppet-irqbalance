@@ -14,13 +14,13 @@
 # === Examples
 #
 # include irqbalance
-# 
+#
 # class { 'irqbalance': }
-# 
+#
 # class { 'irqbalance': ensure => present }
 # class { 'irqbalance': ensure => latest }
 # class { 'irqbalance': ensure => absent }
-# 
+#
 # === Authors
 #
 # Joshua Hoblitt <jhoblitt@cpan.org>
