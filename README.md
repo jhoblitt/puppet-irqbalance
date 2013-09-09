@@ -40,7 +40,7 @@ Usage
 Limitations
 -----------
 
-On `$::osfamily == 'RedHat`, no attempt is made to manage
+On `$::osfamily == 'RedHat'`, no attempt is made to manage
 `/etc/sysconfig/irqbalance`.  This is arguably a bug.
 
 ### Tested Platforms
