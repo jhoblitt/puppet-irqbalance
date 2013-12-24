@@ -34,13 +34,22 @@ systems.
 Usage
 -----
 
-    include irqbalance
+```puppet
+include irqbalance
 
-    class { 'irqbalance': }
+class { 'irqbalance': }
 
-    class { 'irqbalance': ensure => present }
-    class { 'irqbalance': ensure => latest }
-    class { 'irqbalance': ensure => absent }
+class { 'irqbalance': ensure => present } # default
+class { 'irqbalance': ensure => latest }
+class { 'irqbalance': ensure => absent }
+```
+
+ * `ensure`
+
+    `String` defaults to: `present`
+
+    Uses Standard Puppet ensure semantics.
+    Valid values are: `present`, `absent`
 
 
 Limitations
