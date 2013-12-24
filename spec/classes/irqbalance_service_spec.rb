@@ -8,7 +8,7 @@ describe 'irqbalance::service', :type => :class do
   describe 'for osfamily RedHat' do
     let(:facts) {{ :osfamily => 'RedHat' }}
 
-    it { should include_class('irqbalance::service') }
+    it { should contain_class('irqbalance::service') }
     it do
       should contain_service('irqbalance').with({
         :ensure => 'running',

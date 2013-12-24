@@ -5,7 +5,7 @@ describe 'irqbalance::params', :type => :class do
   describe 'for osfamily RedHat' do
     let(:facts) {{ :osfamily => 'RedHat' }}
 
-    it { should include_class('irqbalance::params') }
+    it { should contain_class('irqbalance::params') }
   end
 
   describe 'unsupported osfamily' do
@@ -17,7 +17,7 @@ describe 'irqbalance::params', :type => :class do
     end
   
     it 'should fail' do
-      expect { should include_class('irqbalance::params') }.
+      expect { should contain_class('irqbalance::params') }.
         to raise_error(Puppet::Error, /not supported on Debian/)
     end
   end

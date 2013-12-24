@@ -8,7 +8,7 @@ describe 'irqbalance', :type => :class do
     describe 'one processor' do
       before { facts[:processorcount] = '1' }
 
-      it { should include_class('irqbalance') }
+      it { should contain_class('irqbalance') }
       it { should contain_class('irqbalance::params') }
       it { should contain_class('irqbalance::install').with_ensure('present') }
       it { should contain_class('irqbalance::service').with_ensure('stopped') }
@@ -44,7 +44,7 @@ describe 'irqbalance', :type => :class do
     describe 'multiple processors' do
       before { facts[:processorcount] = '2' }
 
-      it { should include_class('irqbalance') }
+      it { should contain_class('irqbalance') }
       it { should contain_class('irqbalance::params') }
       it { should contain_class('irqbalance::install').with_ensure('present') }
 
