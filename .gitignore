@@ -3,5 +3,7 @@ Gemfile.lock
 *.patch
 pkg/
 *.rej
-spec/fixtures/
+.rspec_system/
+spec/fixtures/manifests/
+spec/fixtures/modules/
 *.swp
