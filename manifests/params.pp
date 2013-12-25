@@ -12,7 +12,7 @@
 #
 class irqbalance::params {
   case $::osfamily {
-    'redhat': {
+    'RedHat', 'Debian': {
       $irqbalance_package = 'irqbalance'
       $irqbalance_service = 'irqbalance'
     }
