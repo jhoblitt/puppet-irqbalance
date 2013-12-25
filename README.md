@@ -58,10 +58,16 @@ Limitations
 On `$::osfamily == 'RedHat'`, no attempt is made to manage
 `/etc/sysconfig/irqbalance`.  This is arguably a bug.
 
+On `$::osfamily == 'Debian'`, no attempt is made to manage
+`/etc/default/irqbalance`.  This is also arguably a bug.
+
 ### Tested Platforms
 
-* el5.x
-* el6.x
+ * el5.x
+ * el6.x
+ * Fedora 18
+ * Debian 7.0 (wheezy)
+ * Ubuntu precise (12.04.2 LTS)
 
 
 Versioning
