@@ -22,7 +22,7 @@ class irqbalance::service (
 
   service { $irqbalance::params::irqbalance_service:
     ensure     => $ensure,
-    hasstatus  => true,
+    hasstatus  => $irqbalance::params::hasstatus,
     hasrestart => true,
     enable     => $enable,
   }
