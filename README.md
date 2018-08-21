@@ -24,7 +24,7 @@ Manages the irqbalance package
 Description
 -----------
 
-Installs and manages the the [IRQ balancing
+Installs and manages the [IRQ balancing
 daemon](https://github.com/Irqbalance/irqbalance) software package.  The daemon
 is only enabled/started if the system has a `$::processorcount`of greater than
 one.  This is because the daemon will automatically exit on single processor
